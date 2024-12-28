@@ -27,6 +27,7 @@ Compile the assembly code with:
 ```sh
 nasm -f elf64 optimized_randomx.asm -o optimized_randomx.o
 ld optimized_randomx.o -o optimized_randomx
+
 ### Integration
 
 For detailed instructions on integrating this code into mining software or using it standalone, see [USAGE.md](USAGE.md).
