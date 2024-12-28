@@ -1,5 +1,3 @@
-Here's a concise README file for your GitHub repository:
-
 ```markdown
 # Optimized RandomX Assembly Code
 
