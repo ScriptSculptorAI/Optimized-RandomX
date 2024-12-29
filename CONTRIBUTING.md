@@ -49,7 +49,7 @@ In the interest of fostering an open and welcoming environment, we pledge to mak
 - **Stay On Topic**: Keep discussions focused on the project and related topics.
 
 ### Enforcement
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [your-email@example.com]. All complaints will be reviewed and investigated, and will result in a response that is deemed necessary and appropriate to the circumstances.
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [Quality4890@outlook.com]. All complaints will be reviewed and investigated, and will result in a response that is deemed necessary and appropriate to the circumstances.
 
 ## Development Workflow
 
