@@ -1,23 +1,54 @@
-# Define the assembler and linker
-ASM=nasm
-LD=ld
+```makefile
+# Makefile for Optimized RandomX Assembly Code
 
-# Define the source and output filenames
-SRC=optimized_randomx.asm
-OBJ=$(SRC:.asm=.o)
-TARGET=optimized_randomx
+# Compiler and linker
+ASM = nasm
+LD = ld
+
+# Compiler and linker flags
+ASM_FLAGS = -f elf64
+LD_FLAGS =
+
+# Source and target files
+SRC = randomx.asm
+OBJ = randomx.o
+TARGET = randomx
 
 # Default target
 all: $(TARGET)
 
-# Assembly rule
+# Rule to build the object file
 $(OBJ): $(SRC)
-	$(ASM) -f elf64 $< -o $@
+	$(ASM) $(ASM_FLAGS) -o $@ $<
 
-# Linking rule
+# Rule to link the object file to create the executable
 $(TARGET): $(OBJ)
-	$(LD) $< -o $@
+	$(LD) $(LD_FLAGS) -o $@ $<
 
-# Clean up
+# Clean up object and executable files
 clean:
 	rm -f $(OBJ) $(TARGET)
+
+# Run the executable
+run: $(TARGET)
+	./$(TARGET)
+
+.PHONY: all clean run
+```
+
+### Usage Instructions:
+
+1. **Build the Project:**
+   ```bash
+   make
+   ```
+
+2. **Run the Executable:**
+   ```bash
+   make run
+   ```
+
+3. **Clean Up:**
+   ```bash
+   make clean
+   ```
